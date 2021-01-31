@@ -1,5 +1,10 @@
 # Virtual Vehicle Simulator
 
+Repository for my final year project as part of my Computer Science degree at Northumbria University. 
+The module took place over the course of 2019-2020, and was finished on 14th May 2020. The deliverables were a sofware package developed over the course of the year, as well as an accompanying dissertation.
+
+---
+
 This is a web application that is used to allow interaction with a virtual vehicle and its broadcasted signals, all of which can be queried and updated through this project's API, with changes immediately reflected. 
 
 It consists of a 3 segments: a virtual vehicle which can be rotated by clicking & dragging the cursor, a table that displays all values that can be updated through the API, and a log that displays information about every request received by the API.
@@ -24,7 +29,10 @@ localhost:3000
 ```
 
 ## Documentation
-Documentation for the Web API is available [here](https://documenter.getpostman.com/view/10442312/SzmiWw6e).
+Documentation for the Web API is available [here](https://documenter.getpostman.com/view/10442312/SzmiWw6e). It contains all relevant technical information about each endpoint of the API.
+
+### Testing
+Speed was the primary objective for the application. As such, the project was tested extensively during development, using Postman's automation suite, allowing for hundreds of thousands of calls to each individual endpoint. An example test report, `test-report.html` is included in the repository. An in-depth look at these tests and how they were performed can be found in the dissertation.
 
 ## Software libraries used
 [Express](expressjs.com) - The server framework used in this project.
@@ -40,3 +48,6 @@ Documentation for the Web API is available [here](https://documenter.getpostman.
 [Express-validator](express-validator.github.io/docs/) - An express implementation of the validator.js library, used during testing of the POST requests, to validate data before it is sent to the client application.
 
 [Moment](momentjs.com) - Used to format timestamps that are provided alongside the request logs at the bottom of the application.
+
+## Dissertation
+The dissertation written as part of this project is available [here](https://drive.google.com/file/d/1KNhsxaYZYLcLa7iDxkAFc2tcmz0X4Qgq/view?usp=sharing).
