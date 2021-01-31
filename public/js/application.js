@@ -88,7 +88,7 @@ $(document).ready(function () {
         var reqDate = moment().format("HH:mm:ss");
         var msgString = '<p>' + '<span class="date">' + reqDate + '</span>' +
             '<span class="method get">' + msg.method + '</span>' +
-            '<span class="url">' + msg.info + '</span></p>';
+            '<span class="url">' + msg.info + '</span> request sent from user </p>';
         $('#log').prepend(msgString);
 
     })
@@ -100,7 +100,7 @@ $(document).ready(function () {
         var reqDate = moment().format("HH:mm:ss");
         var msgString = '<p>' + '<span class="date">' + reqDate + '</span>' +
             '<span class="method post">' + msg.method + '</span>' +
-            '<span class="url">' + msg.info + '</span></p>';
+            '<span class="url">' + msg.info + '</span> request sent from user </p>';
         $('#log').prepend(msgString); // add the message to the log section of the page
 
         // handle different posts based on which endpoint is being queried

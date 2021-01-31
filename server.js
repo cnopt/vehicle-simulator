@@ -40,357 +40,357 @@ app.get('/', (req, res) => {
 app.get('/vehicle', (req, res) => {
     res.json(Vehicle)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain
 app.get('/vehicle/drivetrain', (req, res) => {
     res.json(Vehicle.Drivetrain)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> Engine
 app.get('/vehicle/drivetrain/engine', (req, res) => {
     res.json(Vehicle.Drivetrain.Engine)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> Engine -> displacement
 app.get('/vehicle/drivetrain/engine/displacement', (req, res) => {
     res.json(Vehicle.Drivetrain.Engine.displacement)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> Engine -> power
 app.get('/vehicle/drivetrain/engine/power', (req, res) => {
     res.json(Vehicle.Drivetrain.Engine.power)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> Engine -> maxtorque
 app.get('/vehicle/drivetrain/engine/maxtorque', (req, res) => {
     res.json(Vehicle.Drivetrain.Engine.maxTorque)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> Engine -> maxrpm
 app.get('/vehicle/drivetrain/engine/maxrpm', (req, res) => {
     res.json(Vehicle.Drivetrain.Engine.maxRPM)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> Transmission
 app.get('/vehicle/drivetrain/transmission', (req, res) => {
     res.json(Vehicle.Drivetrain.Transmission)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> Transmission -> type
 app.get('/vehicle/drivetrain/transmission/type', (req, res) => {
     res.json(Vehicle.Drivetrain.Transmission.type)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> Transmission -> speed
 app.get('/vehicle/drivetrain/transmission/speed', (req, res) => {
     res.json(Vehicle.Drivetrain.Transmission.speed)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> Transmission -> gear
 app.get('/vehicle/drivetrain/transmission/gear', (req, res) => {
     res.json(Vehicle.Drivetrain.Transmission.gear)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> Transmission -> performancemode
 app.get('/vehicle/drivetrain/transmission/performancemode', (req, res) => {
     res.json(Vehicle.Drivetrain.Transmission.performanceMode)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> FuelSystem
 app.get('/vehicle/drivetrain/fuelsystem', (req, res) => {
     res.json(Vehicle.Drivetrain.FuelSystem)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> FuelSystem -> fuelLevel
 app.get('/vehicle/drivetrain/fuelsystem/level', (req, res) => {
     res.json(Vehicle.Drivetrain.FuelSystem.fuelLevel)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Drivetrain -> FuelSystem -> fuelWarning
 app.get('/vehicle/drivetrain/fuelsystem/warning', (req, res) => {
     res.json(Vehicle.Drivetrain.FuelSystem.fuelWarning)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Body
 app.get('/vehicle/body', (req, res) => {
     res.json(Vehicle.Body)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Body -> Trunk
 app.get('/vehicle/body/trunk', (req, res) => {
     res.json(Vehicle.Body.Trunk)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Body -> FrontWindshield
 app.get('/vehicle/body/frontwindshield', (req, res) => {
     res.json(Vehicle.Body.FrontWindshield)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Body -> FrontWindshield
 app.get('/vehicle/body/frontwindshield/wipers', (req, res) => {
     res.json(Vehicle.Body.FrontWindshield.Wipers)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Body -> Mirrors
 app.get('/vehicle/body/mirrors', (req, res) => {
     res.json(Vehicle.Body.Mirrors)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Body -> Mirrors -> Heating
 app.get('/vehicle/body/mirrors/heating', (req, res) => {
     res.json(Vehicle.Body.Mirrors.Heating)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Chassis
 app.get('/vehicle/chassis', (req, res) => {
     res.json(Vehicle.Chassis)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Chassis -> Wheel
 app.get('/vehicle/chassis/wheel', (req, res) => {
     res.json(Vehicle.Chassis.Wheel)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Chassis -> Wheel -> Front
 app.get('/vehicle/chassis/wheel/front', (req, res) => {
     res.json(Vehicle.Chassis.Wheel.Front)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Chassis -> Wheel -> Front -> Left
 app.get('/vehicle/chassis/wheel/front/left', (req, res) => {
     res.json(Vehicle.Chassis.Wheel.Front.Left)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Chassis -> Door
 app.get('/vehicle/chassis/door', (req, res) => {
     res.json(Vehicle.Chassis.Door)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Chassis -> Door -> Front
 app.get('/vehicle/chassis/door/front', (req, res) => {
     res.json(Vehicle.Chassis.Door.Front)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Chassis -> Door -> Front -> Left
 app.get('/vehicle/chassis/door/front/left', (req, res) => {
     res.json(Vehicle.Chassis.Door.Front.Left)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Chassis -> Sensor
 app.get('/vehicle/chassis/sensor', (req, res) => {
     res.json(Vehicle.Chassis.Sensor)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Chassis -> Sensor -> RainSensor
 app.get('/vehicle/chassis/sensor/rainsensor', (req, res) => {
     res.json(Vehicle.Chassis.Sensor.RainSensor)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Chassis -> Sensor -> LowLightSensor
 app.get('/vehicle/chassis/sensor/lowlightsensor', (req, res) => {
     res.json(Vehicle.Chassis.Sensor.LowLightSensor)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin
 app.get('/vehicle/cabin', (req, res) => {
     res.json(Vehicle.Cabin)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> Seats
 app.get('/vehicle/cabin/seats', (req, res) => {
     res.json(Vehicle.Cabin.Seats)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> Seats -> Front
 app.get('/vehicle/cabin/seats/front', (req, res) => {
     res.json(Vehicle.Cabin.Seats.Front)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> Seats -> Front -> Pos1
 app.get('/vehicle/cabin/seats/front/pos1', (req, res) => {
     res.json(Vehicle.Cabin.Seats.Front.Pos1)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> Seats -> Front -> Pos1 -> Seatbelt
 app.get('/vehicle/cabin/seats/front/pos1/seatbelt', (req, res) => {
     res.json(Vehicle.Cabin.Seats.Front.Pos1.Seatbelt)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> SteeringWheel
 app.get('/vehicle/cabin/steeringwheel', (req, res) => {
     res.json(Vehicle.Cabin.SteeringWheel)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> SteeringWheel -> position
 app.get('/vehicle/cabin/steeringwheel/position', (req, res) => {
     res.json(Vehicle.Cabin.SteeringWheel.position)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> Sunroof
 app.get('/vehicle/cabin/sunroof', (req, res) => {
     res.json(Vehicle.Cabin.Sunroof)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> Sunroof -> position
 app.get('/vehicle/cabin/sunroof/position', (req, res) => {
     res.json(Vehicle.Cabin.Sunroof.position)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> HVAC
 app.get('/vehicle/cabin/hvac', (req, res) => {
     res.json(Vehicle.Cabin.HVAC)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> HVAC -> ambientAirTemp
 app.get('/vehicle/cabin/hvac/airtemp', (req, res) => {
     res.json(Vehicle.Cabin.HVAC.ambientAirTemperature)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> HVAC -> AirConditioning
 app.get('/vehicle/cabin/hvac/aircon', (req, res) => {
     res.json(Vehicle.Cabin.HVAC.AirConditioning)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cabin -> HVAC -> AirConditioning -> status
 app.get('/vehicle/cabin/hvac/aircon/status', (req, res) => {
     res.json(Vehicle.Cabin.HVAC.AirConditioning.status)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Identification
 app.get('/vehicle/identification', (req, res) => {
     res.json(Vehicle.Identification)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Identification -> brand 
 app.get('/vehicle/identification/brand', (req, res) => {
     res.json(Vehicle.Identification.brand)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Identification -> model
 app.get('/vehicle/identification/model', (req, res) => {
     res.json(Vehicle.Identification.model)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Identification -> vin
 app.get('/vehicle/identification/vin', (req, res) => {
     res.json(Vehicle.Identification.vin)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cosmetic
 app.get('/vehicle/cosmetic', (req, res) => {
     res.json(Vehicle.Cosmetic)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cosmetic -> exteriorColour
 app.get('/vehicle/cosmetic/exteriorcolour', (req, res) => {
     res.json(Vehicle.Cosmetic.exteriorColour)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 // [GET] Vehicle -> Cosmetic -> interiorColour
 app.get('/vehicle/cosmetic/interiorcolour', (req, res) => {
     res.json(Vehicle.Cosmetic.interiorColour)
     io.emit('VehicleSim GET Event',
-        { 'method': 'GET ', 'info': req.url + ' request sent from user' })
+        { 'method': 'GET ', 'info': req.url})
 })
 
 
@@ -414,7 +414,7 @@ app.post('/vehicle/drivetrain/engine/displacement', [
     // (the client-side socket is listening for this)
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 
@@ -432,7 +432,7 @@ app.post('/vehicle/drivetrain/engine/power', [
     // else
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 
@@ -450,7 +450,7 @@ app.post('/vehicle/drivetrain/engine/torque', [
     // else
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 
@@ -468,7 +468,7 @@ app.post('/vehicle/drivetrain/engine/maxrpm', [
     // else
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 
@@ -485,7 +485,7 @@ app.post('/vehicle/drivetrain/transmission/type', [
     // else
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 
@@ -503,7 +503,7 @@ app.post('/vehicle/drivetrain/transmission/speed', [
     // else
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 // [POST] Vehicle -> Drivetrain -> Transmission -> gear
@@ -519,7 +519,7 @@ app.post('/vehicle/drivetrain/transmission/gear', [
     // else
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 // [POST] Vehicle -> Drivetrain -> Transmission -> performancemode
@@ -535,7 +535,7 @@ app.post('/vehicle/drivetrain/transmission/performancemode', [
     // else
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 // [POST] Vehicle -> Chassis -> Wheel -> Front -> Left -> tyrepressure
@@ -551,7 +551,7 @@ app.post('/vehicle/chassis/wheel/front/left/tyrepressure', [
     // else
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 // [POST] Vehicle -> Chassis -> Wheel -> Front -> Left -> tyrepressure
@@ -567,7 +567,7 @@ app.post('/vehicle/chassis/wheel/rear/left/tyrepressure', [
     // else
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 // [POST] Vehicle -> Chassis -> Door -> Front -> Left
@@ -585,7 +585,7 @@ app.post('/vehicle/chassis/door/front/left/status', [
     // else
     res.send('Succesfully updated value')
     io.emit('VehicleSim POST Event',
-        { 'method': 'POST', 'info': req.url + ' request sent from user', 'val': req.query.value })
+        { 'method': 'POST', 'info': req.url, 'val': req.query.value })
 });
 
 

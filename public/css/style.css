@@ -14,12 +14,17 @@
   font-family: atlas;
   src: url('../fonts/AtlasGrotesk-Regular-Web.woff2');
 }
+@font-face {
+  font-family: menlo;
+  src: url('../fonts/Menlo-Regular.ttf');
+}
 
 
 
 body {
   margin: 0;
   font-family: atlas;
+  overflow-y: hidden;
 }
 
 #header {
@@ -106,7 +111,7 @@ body {
   background-color: #4e4e4e;
   color: white;
   width: 33%;
-  height: 69vh; /* change this later so it's actually just 100% of the height */
+  height: 33vw; /* change this later so it's actually just 100% of the height */
   box-sizing: border-box;
   font-size: 0.8em;
   overflow-y: scroll;
@@ -146,6 +151,12 @@ body {
 .bottom-panel {
   padding-top:0.2em;
   padding-left:1.2em;
+  background-color: #464646;
+  color:white;
+  -moz-box-shadow: inset 0 0 12px #111;
+  -wekbit-box-shadow: inset 0 0 12px #111;
+  box-shadow: inset 0 0 12px #111;
+  height: 100vw;
 }
 
 #async-message-note {
@@ -156,7 +167,7 @@ body {
 #log {
   font-family: atlas;
   font-size: 0.9em;
-  height: 100px;
+  height: 33vh;
   overflow-y: scroll;
 }
 
@@ -181,4 +192,13 @@ body {
 #log p .method.get {
   background-color: #87a36f;
   color:white;
+}
+#log p .url {
+  font-family: menlo;
+  font-size: 0.95em;
+  background-color: #090705;
+  padding: 0.25rem;
+  border-radius: 4px;
+  color:#af7e61;
+  margin-left: -0.2rem;
 }
