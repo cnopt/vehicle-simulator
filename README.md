@@ -36,6 +36,11 @@ Documentation for the Web API is available [here](https://documenter.getpostman.
 ### Testing
 Speed was the primary objective for the application. As such, the project was tested extensively during development, using Jest in conjunction with Postman's automation suite, allowing for hundreds of thousands of calls to each individual endpoint. An example test report, `test-report.html` is included in the repository. An in-depth look at these tests and how they were performed can be found in the dissertation.
 
+The test suite can be ran using the following command, which will also automatically generate another test report.
+```
+npm test
+```
+
 ## Software libraries used
 [Express](expressjs.com) - The server framework used in this project.
 
