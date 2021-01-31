@@ -1,0 +1,118 @@
+---
+Drivetrain:
+  Engine:
+    displacement: 1600
+    power: 500
+    maxTorque: 130
+    currentTorque: 0
+    maxRPM: 9700
+    currentRPM: 0
+    Throttle:
+      currentPosition: 0
+  Transmission:
+    type: MT
+    speed: 36
+    gear: '3'
+    driveType: FWD
+    performanceMode: 'true'
+    odometerValue: 13421
+  FuelSystem:
+    fuelLevel: 15
+    fuelCapacity: 60
+    fuelType: Diesel
+    fuelWarning: 'false'
+    currentRange: 32
+    currentMPG: 41
+Body:
+  Hood:
+    isOpen: 'false'
+  Trunk:
+    isOpen: 'false'
+    isLocked: 'true'
+  FrontWindshield: {}
+  RearWindshield: {}
+  Mirrors: {}
+Chassis:
+  Wheel:
+    Front:
+      Left:
+        tyrePressure: 80
+        tyreTemp: 28.2
+      Right:
+        tyrePressure: 80
+        tyreTemp: 26.1
+    Rear:
+      Left:
+        tyrePressure: 78
+        tyreTemp: 29
+      Right:
+        tyrePressure: 77.9
+        tyreTemp: 28.5
+  Door:
+    Front:
+      Left:
+        isClosed: 'true'
+      Right:
+        isClosed: 'true'
+  BodySensor:
+    RainSensor:
+      detectionLevel: 0
+    LowLightSensor:
+      detectionLevel: 30
+Cabin:
+  Seats:
+    Front:
+      Pos1:
+        position: 12
+        Seatbelt:
+          isFastened: 'true'
+      Pos2:
+        position: 30
+        Seatbelt:
+          isFastened: 'true'
+    Rear:
+      Pos1:
+        position: 0
+        Seatbelt:
+          isFastened: 'false'
+      Pos2:
+        position: 0
+        Seatbelt:
+          isFastened: 'false'
+  SteeringWheel:
+    position: -8
+  Sunroof:
+    position: 0
+  HVAC:
+    ambientAirTemperature: 29
+    AirConditioning:
+      status: 'false'
+      level: 0
+    AirCirculation:
+      status: 'false'
+      level: 0
+    HeatedSeats:
+      Front:
+        Pos1:
+          status: 'true'
+          level: 70
+        Pos2:
+          status: 'false'
+          level: 0
+      Rear:
+        Pos1:
+          status: 'false'
+          level: 0
+        Pos2:
+          status: 'false'
+          level: 0
+VehicleIdentification:
+  brand: Jaguar
+  model: CX75 Concept
+  year: '2013'
+  region: UK
+  vin: KJN4328XDSI590
+VehicleCosmetic:
+  exteriorColour: Silver
+  interiorColour: White
+  trimLevel: SV Project 8

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Loading of local scripts -->
+      <link rel="stylesheet" href="/css/style.css" type="text/css">
+      <script src="/js/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="/js/socket.io.js"></script>
+      <script type="text/javascript" src="/js/moment.min.js"></script>
+      <script type="text/javascript" src="/js/application.js"></script>
+      <script type="text/javascript" src="/js/jquery.reel.js"></script>
+      <title>Vehicle Simulator</title>
+  </head>
+  <body>
+
+    <div class="container" id="content">
+
+      <div id="header">
+        <!-- <img id="logo" src="/img/jaguar-chrome.png" width="40px"/> -->
+      </div>
+
+      <!-- This div contains the image collection for the virtual vehicle ,
+      which is scrolled through the use of the reel library. The reel parameters
+      are defined below  -->
+      <div id="image-container">
+      <img src="/img/CX75//0019.jpg"
+           width="1500"
+           class="reel"
+           id="image"
+           data-images="/img/CX75/####.jpg"
+           data-frames="50"
+           data-frame="20"
+           data-rows="1"
+           data-row="1"
+           data-responsive="true"
+           data-cursor="ew-resize"
+           data-brake="0.5">
+
+          <!--|  MOVE LEFT = LOWER X VALUE    |
+              |  MOVE RIGHT = HIGHER X VALUE  |
+
+              |  MOVE UP = LOWER Y VALUE     |
+              |  MOVE DOWN = HIGHER Y VALUE    
+          These values dictate the annotation labels' position within the parent container,
+          and ensure that their position is maintained when the user 'moves' the car around -->
+          <span class="reel-annotation anno" id="anno-door"
+          data-x="970, 975, 975, 960, 940, 920, 890, 860, 840, 800, 780, 750, 720, 690, 660, 630, 600"
+          data-y="285, 285, 290, 290, 290, 290, 290, 290, 290, 290, 290, 290, 290, 290, 290, 292, 294"
+          data-for="image" data-start="16" data-end="35"> <p></p> <div id="tab"></div></span>
+          <span class="reel-annotation anno" id="anno-front-left-tyre"
+          data-x="940, 880, 820, 750, 690, 630, 580, 540, 500, 460, 420, 400, 395, 385, 380, 377, 370"
+          data-y="420, 410, 410, 410, 410, 415, 410, 400, 395, 390, 390, 380, 375, 370, 365, 360, 352"
+          data-for="image" data-start="16" data-end="33"> <p></p> <div id="tab"></div></span>
+          <span class="reel-annotation anno" id="anno-rear-left-tyre"
+          data-x="1090, 1120, 1140, 1160, 1170, 1175, 1170, 1165, 1160, 1140, 1120, 1070, 1030, 970, 900, 840"
+          data-y="305, 305, 310, 320, 330, 335, 340, 350, 355, 360, 365, 370, 375, 370, 365, 352, 352"
+          data-for="image" data-start="17" data-end="36"> <p></p> <div id="tab"></div></span>
+        </div>
+
+      <!-- Create the table area, where vehicle values that can be updated via POST requests are displayed -->
+      <div id="side-panel">
+          <table id="side-panel-table">
+          </table>
+      </div>
+    </div>
+
+    <!-- Create the log section at the bottom of the page to display all requests being sent to the API -->
+    <div class="bottom-panel">
+      <p id="async-message-note">Asynchronous page updates will appear here:</p>
+      <div id="log"></div>
+  </div>
+
+  </body>
+</html>
