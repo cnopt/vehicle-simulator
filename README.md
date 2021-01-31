@@ -9,6 +9,8 @@ This is a web application that is used to allow interaction with a virtual vehic
 
 It consists of a 3 segments: a virtual vehicle which can be rotated by clicking & dragging the cursor, a table that displays all values that can be updated through the API, and a log that displays information about every request received by the API.
 
+![image of the web application](https://github.com/cnopt/vehicle-simulator/blob/master/cx75-webpage-preview.png.jpg?raw=true)
+
 ## Installation
 
 a package.json file is included within the file structure to allow for quick and easy install of the project's dependencies.
@@ -32,7 +34,7 @@ localhost:3000
 Documentation for the Web API is available [here](https://documenter.getpostman.com/view/10442312/SzmiWw6e). It contains all relevant technical information about each endpoint of the API.
 
 ### Testing
-Speed was the primary objective for the application. As such, the project was tested extensively during development, using Postman's automation suite, allowing for hundreds of thousands of calls to each individual endpoint. An example test report, `test-report.html` is included in the repository. An in-depth look at these tests and how they were performed can be found in the dissertation.
+Speed was the primary objective for the application. As such, the project was tested extensively during development, using Jest in conjunction with Postman's automation suite, allowing for hundreds of thousands of calls to each individual endpoint. An example test report, `test-report.html` is included in the repository. An in-depth look at these tests and how they were performed can be found in the dissertation.
 
 ## Software libraries used
 [Express](expressjs.com) - The server framework used in this project.
