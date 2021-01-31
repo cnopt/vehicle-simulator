@@ -9,7 +9,7 @@ This is a web application that is used to allow interaction with a virtual vehic
 
 It consists of a 3 segments: a virtual vehicle which can be rotated by clicking & dragging the cursor, a table that displays all values that can be updated through the API, and a log that displays information about every request received by the API.
 
-![image of the web application](https://github.com/cnopt/vehicle-simulator/blob/master/cx75-webpage-preview.png.jpg?raw=true)
+![image of the web application](https://github.com/cnopt/vehicle-simulator/blob/master/cx75-webpage-preview.png?raw=true)
 
 ## Installation
 
