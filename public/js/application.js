@@ -143,6 +143,13 @@ $(document).ready(function () {
 
     })
 
+    document.getElementById("sendReq").onclick = sendReq;
+
+
+
+    function sendReq() {
+        fetch("http://localhost:3000/vehicle")
+    }
 
     // current frame reel is on
     // console.log($('#image').reel('frame'));
