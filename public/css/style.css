@@ -27,6 +27,18 @@ body {
   overflow-y: hidden;
 }
 
+#simulator-section {
+  width: 77%;
+  float: left;
+}
+
+#api-section {
+  width: 23%;
+  float: right;
+  height: 100vh;
+  background-color: #1b1b1b;
+}
+
 #header {
   width: 100vw;
   height: 42px;
@@ -111,7 +123,7 @@ body {
   background-color: #4e4e4e;
   color: white;
   width: 33%;
-  height: 33vw; /* change this later so it's actually just 100% of the height */
+  height: 25.4vw; /* change this later so it's actually just 100% of the height */
   box-sizing: border-box;
   font-size: 0.8em;
   overflow-y: scroll;
