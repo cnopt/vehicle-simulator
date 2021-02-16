@@ -1,7 +1,7 @@
 # Virtual Vehicle Simulator
 
 Repository for my final year project as part of my Computer Science degree at Northumbria University. 
-The module took place over the course of 2019-2020, and was finished on 14th May 2020. The deliverables were a sofware package developed over the course of the year, as well as an accompanying dissertation.
+The module took place through 2019-2020, and was finished on 14th May 2020. The deliverables were a sofware package developed over the course of the year, as well as an accompanying dissertation.
 
 ---
 
