@@ -49,6 +49,23 @@ Specifically, its approach is in the form of a branch/node structure, where a ve
 
 The schema is implemented in both JSON and YAML formats, written and formatted based on OpenAPI specifications and guidelines.
 
+### Example structure
+
+```
+__ Drivetrain
+____ Engine
+______ displacement
+______ power
+______ maxTorque
+______ maxRPM
+______ currentRPM
+______ Throttle
+________ currentPosition
+```
+
+Capitalised values represent branches - structures that contain one or more nodes. If you needed to poll a specific value, you'd query a node.
+
+
 
 ## Software libraries used
 [Express](expressjs.com) - The server framework used in this project.
