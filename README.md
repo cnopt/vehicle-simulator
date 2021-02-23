@@ -41,6 +41,15 @@ The test suite can be ran using the following command, which will also automatic
 npm test
 ```
 
+## Schema
+
+The virtual vehicle is implemented in the form of a schema that I designed and developed. It is based on research from primary data sources such as manufacturer specifications, commercial automotive software, online vehicle databases, and the opinions/approaches of industry professionals.
+
+Specifically, its approach is in the form of a branch/node structure, where a vehicle is represented by sets of these structures. Each vehicle subsystem, such as its `Drivetrain`, includes branches, which in turn include nodes. Both the branches and nodes are accessible, allowing for retrieval of large data sets, or specific data points.
+
+The schema is implemented in both JSON and YAML formats, written and formatted based on OpenAPI specifications and guidelines.
+
+
 ## Software libraries used
 [Express](expressjs.com) - The server framework used in this project.
 
