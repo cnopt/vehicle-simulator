@@ -7,7 +7,7 @@ The module took place through 2019-2020, and was finished on 14th May 2020. The 
 
 This software is used to allow interaction with a virtual vehicle and its broadcasted signals, all of which can be queried and updated through this project's API, with changes immediately reflected. 
 
-The scope of the project was to design and architext a data schema that represents a conventional vehicle, and the data signals that are available to be queried (i.e. current gear, current speed, seatbelt status, performance mode, etc). A web API was then developed in order to implement the vehicle schema, with focus on speed and efficiency, so as to achieve its target of being able to serve thousands of requests per second, each faster than 10ms. This was to model the real environment of vehicle telemetry, where values need to be polled thousands of times per minute.
+The scope of the project was to design and architect a data schema that represents a conventional vehicle, and the data signals that are available to be queried (i.e. current gear, current speed, seatbelt status, performance mode, etc). A web API was then developed in order to implement the vehicle schema, with focus on speed and efficiency, so as to achieve its target of being able to serve thousands of requests per second, each faster than 10ms. This was to model the real environment of vehicle telemetry, where values need to be polled thousands of times per minute.
 
 ![image of the web application](https://github.com/cnopt/vehicle-simulator/blob/master/updated-application-preview.png?raw=true)
 
