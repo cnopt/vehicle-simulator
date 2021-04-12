@@ -14,17 +14,6 @@ The scope of the project was to design and architext a data schema that represen
 Above is a screenshot of the web application, where API requests can be monitored, and updates to the vehicle schema via POST requests are instantly reflected in the table on the right.
 
 
-## Documentation
-Documentation for the Web API is available [here](https://documenter.getpostman.com/view/10442312/SzmiWw6e). It contains all relevant technical information about each endpoint of the API.
-
-### Testing
-Speed was the primary objective for the application. As such, the project was tested extensively during development, using Jest in conjunction with Postman's automation suite, allowing for hundreds of thousands of calls to each individual endpoint. An example test report, `test-report.html` is included in the repository. An in-depth look at these tests and how they were performed can be found in the dissertation.
-
-The test suite can be ran using the following command, which will also automatically generate another test report.
-```
-npm test
-```
-
 ## Schema
 
 The virtual vehicle is implemented in the form of a schema that I designed and developed based on research from primary data sources, such as manufacturer specifications, commercial automotive software, online vehicle databases, and the opinions/approaches of industry professionals.
@@ -49,6 +38,17 @@ ________ currentPosition
 
 Capitalised values represent branches - structures that contain one or more nodes. If you needed to poll a specific value, you'd query a node.
 
+
+### Testing
+Speed was the primary objective for the application. As such, the project was tested extensively during development, using Jest in conjunction with Postman's automation suite, allowing for hundreds of thousands of calls to each individual endpoint. An example test report, `test-report.html` is included in the repository. An in-depth look at these tests and how they were performed can be found in the dissertation.
+
+The test suite can be ran using the following command, which will also automatically generate another test report.
+```
+npm test
+```
+
+## Documentation
+Documentation for the Web API is available [here](https://documenter.getpostman.com/view/10442312/SzmiWw6e). It contains all relevant technical information about each endpoint of the API.
 
 
 ## Installation
