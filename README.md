@@ -14,25 +14,6 @@ The scope of the project was to design and architext a data schema that represen
 Above is a screenshot of the web application, where API requests can be monitored, and updates to the vehicle schema via POST requests are instantly reflected in the table on the right.
 
 
-## Installation
-
-a package.json file is included within the file structure to allow for quick and easy install of the project's dependencies.
-
-```
-npm install
-```
-
-## Usage
-To start the server:
-
-```
-node server.js
-```
-Then, navigate to:
-```
-localhost:3000
-```
-
 ## Documentation
 Documentation for the Web API is available [here](https://documenter.getpostman.com/view/10442312/SzmiWw6e). It contains all relevant technical information about each endpoint of the API.
 
@@ -67,6 +48,28 @@ ________ currentPosition
 ```
 
 Capitalised values represent branches - structures that contain one or more nodes. If you needed to poll a specific value, you'd query a node.
+
+
+
+## Installation
+
+a package.json file is included within the file structure to allow for quick and easy install of the project's dependencies.
+
+```
+npm install
+```
+
+## Usage
+To start the server:
+
+```
+node server.js
+```
+Then, navigate to:
+```
+localhost:3000
+```
+
 
 
 
