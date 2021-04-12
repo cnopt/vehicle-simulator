@@ -11,6 +11,9 @@ The scope of the project was to design and architext a data schema that represen
 
 ![image of the web application](https://github.com/cnopt/vehicle-simulator/blob/master/updated-application-preview.png?raw=true)
 
+Above is a screenshot of the web application, where API requests can be monitored, and updates to the vehicle schema via POST requests are instantly reflected in the table on the right.
+
+
 ## Installation
 
 a package.json file is included within the file structure to allow for quick and easy install of the project's dependencies.
