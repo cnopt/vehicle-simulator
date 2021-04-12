@@ -5,9 +5,9 @@ The module took place through 2019-2020, and was finished on 14th May 2020. The 
 
 ---
 
-This is a web application that is used to allow interaction with a virtual vehicle and its broadcasted signals, all of which can be queried and updated through this project's API, with changes immediately reflected. 
+This software is used to allow interaction with a virtual vehicle and its broadcasted signals, all of which can be queried and updated through this project's API, with changes immediately reflected. 
 
-It consists of a 3 segments: a virtual vehicle which can be rotated by clicking & dragging the cursor, a table that displays all values that can be updated through the API, and a log that displays information about every request received by the API.
+The scope of the project was to design and architext a data schema that represents a conventional vehicle, and the data signals that are available to be queried (i.e. current gear, current speed, seatbelt status, performance mode, etc). A web API was then developed in order to implement the vehicle schema, with focus on speed and efficiency, so as to achieve its target of being able to serve thousands of requests per second, each faster than 10ms. This was to model the real environment of vehicle telemetry, where values need to be polled thousands of times per minute.
 
 ![image of the web application](https://github.com/cnopt/vehicle-simulator/blob/master/updated-application-preview.png?raw=true)
 
@@ -43,9 +43,9 @@ npm test
 
 ## Schema
 
-The virtual vehicle is implemented in the form of a schema that I designed and developed. It is based on research from primary data sources such as manufacturer specifications, commercial automotive software, online vehicle databases, and the opinions/approaches of industry professionals.
+The virtual vehicle is implemented in the form of a schema that I designed and developed based on research from primary data sources, such as manufacturer specifications, commercial automotive software, online vehicle databases, and the opinions/approaches of industry professionals.
 
-Specifically, its approach is in the form of a branch/node structure, where a vehicle is represented by sets of these structures. Each vehicle subsystem, such as its `Drivetrain`, includes branches, which in turn include nodes. Both the branches and nodes are accessible, allowing for retrieval of large data sets, or specific data points.
+Specifically, its approach is in the form of a branch/node structure, where a vehicle is represented by sets of these structures. Each vehicle subsystem, such as its `Drivetrain`, includes branches, which in turn include nodes. Both the branches and nodes are accessible, allowing for retrieval of both large data sets, and specific data points.
 
 The schema is implemented in both JSON and YAML formats, written and formatted based on OpenAPI specifications and guidelines.
 
