@@ -39,6 +39,11 @@ ________ currentPosition
 Capitalised values represent branches - structures that contain one or more nodes. If you needed to poll a specific value, you'd query a node.
 
 
+### URL Structure
+
+The structure of the schema directly informed the URL structure for the API. This means that the locations for specific data points can be determined simply based on where they sit in the schema. The URL follows a simple, readable format of branches and nodes representing directories and subdirectories. For example, the `engine displacement` value sitsd within the Drivetrain -> Engine branches, so the URL to retrieve this value would be `/Vehicle/Drivetrain/Engine/displacement`.
+
+
 ### Testing
 Speed was the primary objective for the application. As such, the project was tested extensively during development, using Jest in conjunction with Postman's automation suite, allowing for hundreds of thousands of calls to each individual endpoint. An example test report, `test-report.html` is included in the repository. An in-depth look at these tests and how they were performed can be found in the dissertation.
 
