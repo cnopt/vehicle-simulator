@@ -41,7 +41,9 @@ Capitalised values represent branches - structures that contain one or more node
 
 ### URL Structure
 
-The structure of the schema directly informed the URL structure for the API. This means that the locations for specific data points can be determined simply based on where they sit in the schema. The URL follows a simple, readable format of branches and nodes representing directories and subdirectories. For example, the `engine displacement` value sitsd within the Drivetrain -> Engine branches, so the URL to retrieve this value would be `/Vehicle/Drivetrain/Engine/displacement`.
+The structure of the schema directly informed the URL structure for the API. This means that the locations for specific data points can be determined simply based on where they sit in the schema. The URL follows a simple, readable format of branches and nodes representing directories and subdirectories. For example, the `displacement` value sits within the Drivetrain -> Engine branches, so the URL to retrieve this value would be `/Vehicle/Drivetrain/Engine/displacement`.
+
+![example URL endpoint diagram](https://github.com/cnopt/vehicle-simulator/blob/master/Endpoint example - GET.png?raw=true)
 
 
 ### Testing
