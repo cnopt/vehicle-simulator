@@ -54,6 +54,21 @@ The test suite can be ran using the following command, which will also automatic
 npm test
 ```
 
+#### Automation
+
+Using Postman's Collection Runner, each endpoint of the API could be queried hundreds of times per second. Using volatile (temporary) variables, it was also possible to simulate requests to POST endpoints using random, yet realistic data. 
+Each endpoint contained a set of associated tests ran alongside each and every query. These included the status code, response time, and whether said time fell within an acceptable range. Automation was an invaluable tool, as it meant tens of thousands of tests could take place in a short period of time. For example, in an environment where 50 tests are sent to each of the vehicle's 51 GET endpoints, over 10,000 tests are performed:
+
+|                       |                                               |
+| -------------         |-------------                                  |
+| 51                    | GET endpoints                                 |
+| 50                    | Requess to each endpoint                      |
+| 2,550                 | Total requests sent                           |
+| 10,860                | Total tests performed                         |
+| 10,634 **(98.02%)**   | Tests passed (response time less than 10ms    |
+| 216 **(1.98%)**       | Tests failed (response time more than 10ms)   |
+
+
 ## Documentation
 Documentation for the Web API is available [here](https://documenter.getpostman.com/view/10442312/SzmiWw6e). It contains all relevant technical information about each endpoint of the API.
 
