@@ -38,6 +38,8 @@ ________ currentPosition
 
 Capitalised values represent branches - structures that contain one or more nodes. If you needed to poll a specific value, you'd query a node.
 
+![example URL endpoint diagram](https://github.com/cnopt/vehicle-simulator/blob/master/basic-schema-diagram-2.png?raw=true)
+
 
 ### URL Structure
 
